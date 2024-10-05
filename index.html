@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vignessh's Portfolio</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling with Gradient Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #3a6073, #3a3e61);
+            color: #f0f0f0;
+            line-height: 1.6;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        /* Header Section */
+        header {
+            background: rgba(50, 50, 50, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        header:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 0, 255, 0.2);
+            border-color: #ff007f;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 2.5rem;
+            color: #ffb700;
+            margin: 30px 0 15px 0;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* General Section Styling */
+        section {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #f0f0f0;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Project and Experience Section */
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '➤'; /* Arrow bullet point */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #ff007f; /* Bright pink */
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        ul li:hover::before {
+            transform: scale(1.2);
+        }
+
+        /* Certifications Section Links */
+        #certifications a {
+            color: #ffb700; /* Yellow for certification links */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s ease;
+        }
+
+        #certifications a:hover {
+            color: #ff007f; /* Change color on hover */
+            text-shadow: 0 0 10px #ff007f; /* Glow effect */
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+            font-size: 1.1rem;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Vignessh's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Vignessh, a versatile computer science student with a background in DevOps and certifications in AWS and Google Cloud. 
+           I am passionate about exploring new domains and leveraging my skills in a diverse professional setting. 
+           Through hands-on experience in Ansible, Jenkins, Apache, and Bash scripting, I have demonstrated proficiency in automating deployment processes 
+           and optimizing infrastructure management. I am always eager to embrace new challenges and contribute to innovative projects.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>B.Tech in Computer Science (AI and Robotics)</strong>, VIT Chennai, CGPA: 7.31/10 (Aug 2021 – May 2025)
+            </li>
+            <li>
+                <strong>Class 12th, CBSE</strong>, Chinmaya Vidyalaya Anna Nagar, Chennai, Percentage: 87% (March 2021)
+            </li>
+            <li>
+                <strong>Class 10th, CBSE</strong>, Chinmaya Vidyalaya Anna Nagar, Chennai, Percentage: 80.6% (March 2019)
+            </li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p><strong>DevOps Intern</strong> – Swaas Systems Pvt Ltd (Nov 2023 – Dec 2023)</p>
+        <ul>
+            <li>Applied skills in Ansible, Jenkins, Apache, and Bash scripting to enhance deployment processes and infrastructure management.</li>
+            <li>Developed Ansible playbooks to automate configuration tasks, ensuring consistent and efficient server setups.</li>
+            <li>Established CI/CD pipelines using Jenkins, automating build, test, and deployment phases to improve software delivery speed and reliability.</li>
+            <li>Wrote Bash scripts for automating routine tasks, reducing manual effort and improving system uptime.</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Drone Guard (Geospatial Flood Surveillance Systems)</strong>
+                <p>Developed a geospatial surveillance system using drones to monitor flood-prone areas, enhancing real-time flood detection and response.</p>
+            </li>
+            <li>
+                <strong>Oil Adulteration Monitoring System</strong>
+                <p>Designed a monitoring system to detect oil adulteration using sensor data and machine learning algorithms.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>
+                <a href="https://drive.google.com/file/d/14m5CrjN8nXOTeSePdX1gnwnclG6nEZf6/view?usp=sharing" target="_blank">AWS Certified Cloud Practitioner – Beginner (2023)</a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1rs7DipgHYPQzlbo9c5D2r-gaXM8vXApu/view?usp=sharing" target="_blank">Google Cloud Certified – Cloud Digital Leader (2023)</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Languages: Python, Java, Bash</li>
+            <li>DevOps Tools: Ansible, Jenkins, Apache</li>
+            <li>Cloud Platforms: AWS, Google Cloud</li>
+            <li>Web Technologies: HTML, CSS</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="mailto:vignessh.p2021@vitstudent.ac.in">vignessh.p2021@vitstudent.ac.in</a> or <a href="mailto:vignessh.p2003@gmail.com">vignessh.p2003@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vignessh P</p>
+    </footer>
+
+</body>
+</html>
